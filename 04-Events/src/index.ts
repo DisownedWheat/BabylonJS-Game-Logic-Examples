@@ -18,6 +18,10 @@ class Game {
 		this.engine = new BABYLON.Engine(document.getElementById('app') as HTMLCanvasElement);
 		this.scene = new BABYLON.Scene(this.engine);
 		this.scene.debugLayer.show();
+
+		// Here we set up the global game event emitter
+		// This will do things like notify entities that another entity has been
+		// added to the game world
 		this.emitter = createNanoEvents<GameEvents>();
 		this.entities = [];
 	}
