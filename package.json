@@ -1,0 +1,20 @@
+{
+	"name": "babylon-ts-logic-example",
+	"version": "1.0.0",
+	"dependencies": {
+		"babylonjs": "^4.1.0",
+		"nanoevents": "^5.1.5",
+		"tick-knock": "^1.4.1"
+	},
+	"scripts": {
+		"build1": "cd 01-Inheritance && parcel build index.html",
+		"build2": "cd 02-Behaviors-and-Observables && parcel build index.html",
+		"build3": "cd 03-ECS && parcel build index.html",
+		"build4": "cd 04-Events && parcel build index.html",
+		"buildAll": "npm run build1 && cd .. && npm run build2 && cd .. && npm run build3 && cd .. && npm run build4",
+		"clean": "rm 01-Inheritance/dist/* && rm 02-Behaviors-and-Observables/dist/* && rm 03-ECS/dist/* && rm 04-Events/dist/*"
+	},
+	"devDependencies": {
+		"typescript": "^3.8.3"
+	}
+}
