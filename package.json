@@ -7,14 +7,15 @@
 		"tick-knock": "^1.4.1"
 	},
 	"scripts": {
-		"build1": "cd 01-Inheritance && parcel build index.html",
-		"build2": "cd 02-Behaviors-and-Observables && parcel build index.html",
-		"build3": "cd 03-ECS && parcel build index.html",
-		"build4": "cd 04-Events && parcel build index.html",
-		"buildAll": "npm run build1 && cd .. && npm run build2 && cd .. && npm run build3 && cd .. && npm run build4",
+		"build1": "cd 01-Inheritance && parcel build index.html --public-url './'",
+		"build2": "cd 02-Behaviors-and-Observables && parcel build index.html --public-url './'",
+		"build3": "cd 03-ECS && parcel build index.html --public-url './'",
+		"build4": "cd 04-Events && parcel build index.html --public-url './'",
+		"buildAll": "npm run build1 && npm run build2  && npm run build3 && npm run build4",
 		"clean": "rm 01-Inheritance/dist/* && rm 02-Behaviors-and-Observables/dist/* && rm 03-ECS/dist/* && rm 04-Events/dist/*"
 	},
 	"devDependencies": {
+		"cssnano": "^4.1.10",
 		"typescript": "^3.8.3"
 	}
 }
