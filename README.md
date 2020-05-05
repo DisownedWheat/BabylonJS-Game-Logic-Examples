@@ -1,6 +1,8 @@
 # BabylonJS Typescript Logic Examples
 
-This repo is a collection of simple examples showing some ways of handling game logic within Babylon JS.
+This repo is a collection of simple examples showing some ways of handling game logic within Babylon JS. This list is in no way exhaustive as Babylon is a very unopinionated framework.
+
+These are also only my personal experiences so don't consider this an authoritative souce but more as an example to get you started on your own ideas.
 
 ## Running Examples
 All examples have a `dist` directory where you will find the bundled output that can run directly in the browser.
@@ -12,10 +14,13 @@ All examples have a `dist` directory where you will find the bundled output that
 
 # Observations
 
+Please do note that these are my personal experiences and in no way should my mediocre programming skills be taken as gospel for or against these options.
+
 ## Inheritance
 
 ### Pros:
 - Works well with how the Babylon project is structured
+- Requires no external libraries
 - Basic OOP makes it easy to learn
 - Integrates well with Babylon scene tree
 - Easy to debug
@@ -29,6 +34,7 @@ All examples have a `dist` directory where you will find the bundled output that
 
 ### Pros:
 - Integrates well with Babylon
+- Requires no external libraries
 - Very well thought out design
 - Very flexible in how to handle your logic
 - Easy to extend your own custom behaviours
