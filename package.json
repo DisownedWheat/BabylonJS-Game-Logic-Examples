@@ -15,7 +15,7 @@
 		"clean": "rm 01-Inheritance/dist/* && rm 02-Behaviors-and-Observables/dist/* && rm 03-ECS/dist/* && rm 04-Events/dist/*"
 	},
 	"devDependencies": {
-		"cssnano": "^4.1.10",
+		"cssnano": "^6.0.0",
 		"typescript": "^3.8.3"
 	}
 }
