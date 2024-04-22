@@ -1,21 +1,20 @@
 {
 	"name": "babylon-ts-logic-example",
 	"version": "1.0.0",
-	"dependencies": {
-		"babylonjs": "^4.1.0",
-		"nanoevents": "^5.1.5",
-		"tick-knock": "^1.4.1"
-	},
 	"scripts": {
-		"build1": "cd 01-Inheritance && parcel build index.html --public-url './'",
-		"build2": "cd 02-Behaviors-and-Observables && parcel build index.html --public-url './'",
-		"build3": "cd 03-ECS && parcel build index.html --public-url './'",
-		"build4": "cd 04-Events && parcel build index.html --public-url './'",
+		"build1": "cd 01-Inheritance && npx parcel build index.html --public-url './' --dist-dir './dist'",
+		"build2": "cd 02-Behaviors-and-Observables && npx parcel build index.html --public-url './' --dist-dir './dist'",
+		"build3": "cd 03-ECS && npx parcel build index.html --public-url './' --dist-dir './dist'",
+		"build4": "cd 04-Events && npx parcel build index.html --public-url './' --dist-dir './dist'",
 		"buildAll": "npm run build1 && npm run build2  && npm run build3 && npm run build4",
 		"clean": "rm 01-Inheritance/dist/* && rm 02-Behaviors-and-Observables/dist/* && rm 03-ECS/dist/* && rm 04-Events/dist/*"
 	},
 	"devDependencies": {
-		"cssnano": "^4.1.10",
-		"typescript": "^3.8.3"
+		"parcel": "^2.12.0"
+	},
+	"dependencies": {
+		"babylonjs": "^7.3.2",
+		"nanoevents": "^9.0.0",
+		"tick-knock": "^4.2.0"
 	}
 }

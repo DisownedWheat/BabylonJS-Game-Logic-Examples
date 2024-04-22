@@ -4,17 +4,15 @@ This repo is a collection of simple examples showing some ways of handling game 
 
 These are also only my personal experiences so don't consider this an authoritative souce but more as an example to get you started on your own ideas.
 
-## Running Examples
-All examples have a `dist` directory where you will find the bundled output that can run directly in the browser.
-
 ## Building Examples
-- Ensure you have ParcelJS installed `npm i -g parcel-bundler`
-- Run `npm build[x]`  where `x` is the number of the directory (1 is Inheritance, 2 is Behaviours & Observables, etc.)
-- Run `npm buildAll` to build all examples.
+- Run `npm install`
+- Run `npm buildX`  where `X` is the number of the directory (1 is Inheritance, 2 is Behaviours & Observables, etc.)
+- Run `npm buildAll` to build all examples
+- Each example will have its output in its own `dist` directory
 
 # Observations
 
-Please do note that these are my personal experiences and in no way should my mediocre programming skills be taken as gospel for or against these options.
+Please do note that these are my personal experiences and should in no way taken as gospel for or against these options.
 
 ## Inheritance
 
